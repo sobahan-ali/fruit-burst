@@ -9,6 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- lato google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +27,13 @@
                     colors: {
                         textColor: '#12121299',
                         bgRegularBtn: '#F85559',
-                    }
+                    },
+                    backgroundImage: {
+                        'bg_img': "url('./images/banner1.png')",
+                    },
+                    backgroundSize: {
+                        'bg_img': '100% 100%',
+                    },
                 }
             }
         }
@@ -36,7 +47,7 @@
 
 </head>
 
-<body class="max-w-screen-xl mx-auto md:px-8 lg:px-10">
+<body class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-10">
     <header>
         <!-- start navbar -->
         <nav>
@@ -133,8 +144,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-neutral bg-bgRegularBtn"
-                                onclick="my_modal_1.showModal()">Details</button>
+                            <button class="text-bgRegularBtn" onclick="my_modal_1.showModal()">Details</button>
                         </div>
                     </div>
                 </div>
@@ -158,8 +168,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-neutral bg-bgRegularBtn"
-                                onclick="my_modal_2.showModal()">Details</button>
+                            <button class="text-bgRegularBtn" onclick="my_modal_2.showModal()">Details</button>
                         </div>
                     </div>
                 </div>
@@ -183,8 +192,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-neutral bg-bgRegularBtn"
-                                onclick="my_modal_3.showModal()">Details</button>
+                            <button class="text-bgRegularBtn" onclick="my_modal_3.showModal()">Details</button>
                         </div>
                     </div>
                 </div>
@@ -208,11 +216,13 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-neutral bg-bgRegularBtn"
-                                onclick="my_modal_4.showModal()">Details</button>
+                            <button class="text-bgRegularBtn" onclick="my_modal_4.showModal()">Details</button>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center my-10">
+                <button class="btn btn-neutral bg-bgRegularBtn">Show All</button>
             </div>
 
             <!----1-- card start  modal body  -->
@@ -342,6 +352,89 @@
                     </div>
                 </div>
             </dialog>
+        </section>
+
+        <!-- start  meet the team section -->
+        <section class="">
+            <div class="relative bg-bg_img bg-no-repeat bg-center bg-cover bg-origin-padding object-cover my-20 py-5 ">
+                <div class="overlay absolute top-0 left-0 w-full h-full bg-[#00000066]"></div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="text-white">
+                        <h2 class="font_lato text-5xl font-extrabold mb-6 text-center">Meet the fruits expert</h2>
+                        <p class="text-base font-medium font_lato text-center">
+                            Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                            <br>
+                            Latin literature from 45 BC, making it over 2000 years old.
+                        </p>
+                    </div>
+                    <!-- expert container -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-9">
+                        <!-- 1 expert -->
+                        <div class="card">
+                            <figure class="px-10 pt-10">
+                                <img src="./images/member1.png" alt="fruit expert" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center text-white">
+                                <h2 class="card-title text-white">Awlad Hossain</h2>
+                                <p class="text-white">Fruits Expert</p>
+                                <div class="card-actions">
+                                    <i class="fa-brands fa-facebook bg-bgRegularBtn rounded-full"></i>
+                                    <i class="fa-brands fa-twitter bg-bgRegularBtn rounded-full"></i>
+                                    <i class="fa-brands fa-linkedin-in bg-bgRegularBtn rounded-full"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 expert -->
+                        <div class="card bg-base-100">
+                            <figure class="px-10 pt-10">
+                                <img src="./images/member1.png" alt="fruit expert" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Awlad Hossain</h2>
+                                <p>Fruits Expert</p>
+                                <div class="card-actions">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 expert -->
+                        <div class="card bg-base-100">
+                            <figure class="px-10 pt-10">
+                                <img src="./images/member1.png" alt="fruit expert" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Awlad Hossain</h2>
+                                <p>Fruits Expert</p>
+                                <div class="card-actions">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 expert -->
+                        <div class="card bg-base-100">
+                            <figure class="px-10 pt-10">
+                                <img src="./images/member1.png" alt="fruit expert" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Awlad Hossain</h2>
+                                <p>Fruits Expert</p>
+                                <div class="card-actions">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
